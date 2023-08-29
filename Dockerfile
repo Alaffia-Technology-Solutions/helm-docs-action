@@ -5,7 +5,7 @@ FROM alpine
 COPY entrypoint.sh /
 RUN chmod +x /entrypoint.sh
 
-RUN echo "http://dl-4.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
 
 RUN set -x \
     && apk update \
